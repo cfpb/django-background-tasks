@@ -26,5 +26,6 @@ Contributors
 * Kai-Lun Huang (kaibaooo)
 * cedricfarinazzo
 * Jonathan Miller (iamjonmiller)
+* André Meneses (meneses.pt)
 
 Your name could stand here :)
