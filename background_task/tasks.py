@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from datetime import datetime, timedelta
 from importlib import import_module
 from multiprocessing.pool import ThreadPool
@@ -10,7 +8,6 @@ import sys
 
 from django.db.utils import OperationalError
 from django.utils import timezone
-from six import python_2_unicode_compatible
 
 from background_task.exceptions import BackgroundTaskError
 from background_task.models import Task
@@ -266,7 +263,6 @@ class DBTaskRunner(object):
             return False
 
 
-@python_2_unicode_compatible
 class TaskProxy(object):
     def __init__(self, name, task_function, schedule, queue, remove_existing_tasks, runner):
         self.name = name

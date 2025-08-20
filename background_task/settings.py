@@ -8,6 +8,7 @@ try:
 except Exception:
     cpu_count = 1
 
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 class AppSettings(object):
     """
