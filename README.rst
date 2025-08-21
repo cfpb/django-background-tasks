@@ -20,12 +20,12 @@ Developer notes
 
 There are two parts to using background tasks:
 
-- creating the task functions and registering them with the scheduler
-- setup a cron task (or long running process) to execute the tasks
+- Creating the task functions and registering them with the scheduler
+- Setting up a cron task (or long running process) to execute the tasks
 
 Tasks are implemented as functions or any other callable.
 
-For maintainers: The package version number is buried in the `__init__.py` file of the repo's background_tasks folder. If you create a release, make sure to update that version number before creating the release, so that the release wheel's version number will match.
+For maintainers: The package version number is specified in the `__init__.py` file of the repo's background_tasks folder. If you create a release, make sure to update that version number before creating the release, so that the release and the wheel's version number will match.
 
 
 Upstream docs
