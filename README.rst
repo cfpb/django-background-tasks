@@ -15,7 +15,7 @@ Django Background Tasks
     :target: https://pypi.python.org/pypi/django-background-tasks
     :alt: PyPI
 
-Django Background Task is a database-backed work queue for Django, loosely based around `Ruby's DelayedJob`_ library. This project was adopted and adapted from lilspikey_ `django-background-task`.
+Django Background Task is a database-backed work queue for Django, loosely based around `Ruby's DelayedJob`_ library. This project was adopted and adapted from lilspikey_ `django-background-task`  and updated to fix thread concurrency.
 
 .. _Ruby's DelayedJob: https://github.com/tobi/delayed_job
 .. _lilspikey: https://github.com/lilspikey/
