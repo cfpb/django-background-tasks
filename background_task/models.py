@@ -62,7 +62,14 @@ class TaskManager(models.Manager):
                 ready = ready[:count]
             else:
                 ready = self.none()
-        return ready
+
+        with transaction.atomic():
+            tasks_to_lock = ready.select_for_update(skip_locked=True)
+            for task in tasks_to_lock:
+                task.locked_at = now
+                task.save()
+
+        return tasks_to_lock
 
     def unlocked(self, now):
         max_run_time = app_settings.BACKGROUND_TASK_MAX_RUN_TIME
