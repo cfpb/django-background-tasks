@@ -15,12 +15,17 @@ The upstream code is available on PyPI as django-background-tasks, but it hasn't
 
 Since upstream issues are no longer being addressed, we will not be pushing this version upstream as a pull request, nor will it be pushed to PyPI, where there's already too much confusion.
 
+Developer notes
+====
+
 There are two parts to using background tasks:
 
 - creating the task functions and registering them with the scheduler
 - setup a cron task (or long running process) to execute the tasks
 
 Tasks are implemented as functions or any other callable.
+
+For maintainers: The package version number is buried in the `__init__.py` file of the repo's background_tasks folder. If you create a release, make sure to update that version number before creating the release, so that the release wheel's version number will match.
 
 
 Upstream docs
