@@ -4,7 +4,7 @@ Django Background Tasks – CFPB fork
 
 This repo is a temporary fork of Django Background Tasks, a database-backed work queue for Django. 
 
-The upstream code is loosely based on `Ruby's DelayedJob`_ library. The Python version was adapted from the now-archived lilspikey_ `django-background-task` and forked as django-background-tasks_ – which is updated in this fork for compatibility with Django5 and Python 3.13 and to unify fixes.
+The upstream code is loosely based on `Ruby's DelayedJob`_ library. The Python version was adapted from the now-archived lilspikey_ `django-background-task` repo and forked as django-background-tasks_ – which is updated in this fork for compatibility with Django5 and Python 3.13 and to unify fixes.
 
 .. _Ruby's DelayedJob: https://github.com/tobi/delayed_job
 .. _lilspikey: https://github.com/lilspikey/
