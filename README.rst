@@ -11,7 +11,9 @@ The upstream code is loosely based on `Ruby's DelayedJob`_ library. The Python v
 .. _django-background-tasks: https://github.com/django-background-tasks/django-background-tasks
 
 
-The upstream code is available on PyPI as django-background-tasks, but it hasn't been updated since 2024 and has a number of standing issues. Unfortunately the unaddressed issues have contributed to a growing number of uncoordinated forks that have fixed different issues at different times, with conflicting database migrations and PyPI package names. This fork is intended as a stable version that unifies the fixes and migrations, removes Python2 code and results in a package that is compatible with both Python 3.13 and Django 5. The tests in this repo succeed under those specs.
+The upstream code is available on PyPI as django-background-tasks, but it hasn't been updated since 2024 and has a number of standing issues. Unfortunately the unaddressed issues have contributed to a growing number of uncoordinated forks that have fixed different issues at different times, with conflicting database migrations and PyPI package names. 
+
+This fork is intended as a stable version that unifies the fixes and migrations, removes Python2 code and results in a package that is compatible with both Python 3.13 and Django 5. The tests in this repo succeed under those specs.
 
 Since upstream issues are no longer being addressed, we will not be pushing this version upstream as a pull request, nor will it be pushed to PyPI, where there's already too much confusion.
 
